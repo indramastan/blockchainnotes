@@ -1,0 +1,21 @@
+site_name: Blockchain
+pages:
+- Home: index.md
+- Blockchain Introduction: blockchainintro.md
+- Types of Blockchain: blockchaintypes.md
+- Properties Required for Blockchain: propertiesrequired.md
+- Possible Threats : possiblethreats.md
+- Blockchain Capabilities: blockchaincapabilities.md
+- Consensus: consensustypes.md
+- Smart Contract: smartcontract.md
+- Upcoming Projects: upcomingprojects.md
+theme: readthedocs
+extra_css:
+- css/extra.css
+markdown_extensions:
+  - extra
+  - tables
+  - fenced_code
+extra_javascript:
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML
+  - mathjaxhelper.js
