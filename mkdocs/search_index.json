@@ -1,0 +1,199 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "This is a documentation of Blockchain Technology, for \nsimple explanation\n.  It is created by taking notes from various websites for educational purpose.\n\n\nWhy study blockchain:\n Because it is an append-only distributed ledger, which is widely adopted.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/blockchainintro/", 
+            "text": "Blockchain: A Distributed ledger\n\n\nAssets\n\n\nAnything that is capable of being owned or controlled to produce value, is an asset.\n\n \n \n\n\n\n\n\n\nTangible Assets:\n Asset that has a physical form.  e.g. Machinery, Buildings and Land.\n\n\n\n\n\n\nIntangible Assets:\n Asset that is not physical in nature.\n\n\n\n\nIntangible assets are subdivide as\n\n\nFinancial, e.g. bond\n\n\nIntellectual e.g. patents\n\n\nDigital e.g. music\n\n\n\n\n\n\n\n\n\n\n\n\nLedger\n\n\n\n\nLedger\n is a principal book (or computer file) for recording asset transfer between participants.\n\n\n\n\n  \n \n \n\n\n\n\nDistributed\n ledger(shared ledger) is a ledger that is replicated, synchronized and spread across multiple sites, countries, and/or institutions.\n\n\n\n\nWhat is Blockchain\n\n\nBlockchain is an append-only distributed ledger, where records are stored in blocks, and blocks form a chain.\n\n\n\n\nEvery block contains transactions, that can be verified by any node in the network.\nConsensus is procedure to have an accurate Blockchain at every node.", 
+            "title": "Blockchain Introduction"
+        }, 
+        {
+            "location": "/blockchainintro/#blockchain-a-distributed-ledger", 
+            "text": "", 
+            "title": "Blockchain: A Distributed ledger"
+        }, 
+        {
+            "location": "/blockchainintro/#assets", 
+            "text": "Anything that is capable of being owned or controlled to produce value, is an asset.        Tangible Assets:  Asset that has a physical form.  e.g. Machinery, Buildings and Land.    Intangible Assets:  Asset that is not physical in nature.   Intangible assets are subdivide as  Financial, e.g. bond  Intellectual e.g. patents  Digital e.g. music", 
+            "title": "Assets"
+        }, 
+        {
+            "location": "/blockchainintro/#ledger", 
+            "text": "Ledger  is a principal book (or computer file) for recording asset transfer between participants.            Distributed  ledger(shared ledger) is a ledger that is replicated, synchronized and spread across multiple sites, countries, and/or institutions.", 
+            "title": "Ledger"
+        }, 
+        {
+            "location": "/blockchainintro/#what-is-blockchain", 
+            "text": "Blockchain is an append-only distributed ledger, where records are stored in blocks, and blocks form a chain.   Every block contains transactions, that can be verified by any node in the network.\nConsensus is procedure to have an accurate Blockchain at every node.", 
+            "title": "What is Blockchain"
+        }, 
+        {
+            "location": "/blockchaintypes/", 
+            "text": "Public ledger\n\n\nDecentralized, anyone can read and send tranasctions, e.g. Bitcoin, Ethereum, Hyperledger\n\n\nPrivate ledger\n\n\nCentralized under one organization which controls the right to view ans send transactions, e.g. Bankchain\n\n\nWhat is consensus:\n\n\nConsensus defines types of Blockchain\n\n\n\n\nPermissionless Blockchain\n: Every node in the network participate in consensus procedure, e.g. Bitcoin Blockchain (Proof of Work)\n\n\nPermissioned Blockchain\n: Only Selected nodes(validators, e.g. Government or trusted nodes) participate in consensus procedure e.g. Hyperledger Blockchain\n\n\n\n\nBitcoin (Public-Permissionless Blockchain)\n\n\n\n\n\n\nHyperledger (Public-Permissioned Blockchain)\n\n\n\n\nHyperledger\n The Hyperledger Project (www.hyperledger.org) is a collaborative effort to create an enterprise-grade, open-source distributed ledger framework and code base. It aims to advance blockchain technology by identifying and realizing a cross-industry open standard platform for distributed ledgers, which can transform the way business transactions are conducted globally. It is \u00a0a\u00a0protocol\u00a0for\u00a0business\u00ad-to-\u00adbusiness\u00a0and\u00a0 business\u00ad-to-\u00adcustomer\u00a0transactions.\n\n\nHyperledger Fabric\n Hyperledger Fabric (github.com/hyperledger/fabric) is an implementation of a distributed ledger platform for running smart contracts, leveraging familiar and proven technologies, with a modular architecture allowing pluggable implementations of various functions. It is one of multiple projects currently in incubation under the Hyperledger Project. A developerpreview of the Hyperledger Fabric (called \u201cv0.5-developer-preview\u201d) has been released in June 2016 (github.com/hyperledger/fabric/wiki/Fabric-Releases)\n\n\nWhy a new fabric:\n Scalability challenges, and the lack of support for confidential and private transactions, among other limitations, make its use unworkable for many business\u00adcritical applications. To meet the varied demands of the modern marketplace, Hyperledger has been designed for a broad array of industry\u00adfocused use cases, thereby extending the work of the pioneers in the field by addressing the existing shortcomings.\nThe fabric implements a permissioned ledger, it contains a security infrastructure for authentication and authorization. It supports enrollment and transaction authorization through public-key certificates, and confidentiality for chaincode realized through in-band encryption. More precisely, for connecting to the network every peer needs to obtain an enrollment certificate from an enrollment CA that is part of the membership services. It authorizes a peer to connect to the network and to acquire transaction certificates, which are needed to submit transactions. Transaction certificates are issued by a transaction CA and support pseudonymous authorization for the peers submitting transactions, in the sense that multiple transaction certificates issued to the same peer (that is, to the same enrollment certificate) cannot be linked with each other.\n\n\nDepending on the purpose of the network, the issuing authority assigns the appropriate level of access that is required to obtain an identity and transact on the network. A network can be run very publicly, making it easy to integrate into a mobile app project, or it can be completely private and known only to invited participants whose identities have been validated. \n\n\n\n\n\n\n\n\n\n\n\n\nA validating peer is a node on the network responsible for running consensus, validating transactions, and maintaining the ledger. \n\n\nA non-validating peer is a node that functions as a proxy to connect clients (issuing transactions) to validating peers. A non-validating peer does not execute transactions but it may verify them.\n\n\n\n\nSome key features of the current fabric release are:\n\n\n\n\nA permissioned blockchain with immediate finality;\n\n\nRuns arbitrary smart contracts (called chaincode) implemented in Go (golang.org):\n\n\nUser-defined chaincode is encapsulated in a Docker container;\n\n\nSystem chaincode runs in the same process as the peer;\n\n\n\n\n\n\nConsensus protocol is pluggable, currently an implementation of Byzantine fault-tolerant consensus using the PBFT protocol is supported, a prototype of SIEVE to address nondeterministic chaincode is available, and a protocol stub (named NOOPS) serves for development\non a single node;\n\n\nSecurity support through certificate authorities (CAs) for TLS certificates, enrollment certificates, and transaction certificates;\n\n\nPersistent state using a key-value store interface, backed by RocksDB (rocksdb.org);\n\n\nAn event framework that supports pre-defined and custom events;\n\n\nA client SDK (Node.js) to interface with the fabric;\n\n\nSupport for basic REST APIs and CLIs\n\n\n\n\nImportance of both privacy and confidentiality: \nOne of the fundamental requirements for any blockchain fabric is that the $identity$ and $patterns of behavior$ of any party on a network must be impossible for unauthorized parties to ascertain by inspecting the ledger. To allow blockchain users to make certain business logics and/or other parameters of a transaction confidential, rendering them inaccessible to anyone other than the stakeholders for the contract or the asset being transferred, the Hyperledger protocol starts with a cryptographic certificate encapsulating a user\u2019s confidential data, which is registered on a Registration Authority. The Registration Authority can issue and revoke identities that are participating in a network. From each identity, the protocol can generate security keys for members to transact on a network, which conceal the identities of the transacting parties, providing privacy support to the network.\n\n\nContent confidentiality is achieved by encrypting the transactions such that only the stakeholders can decrypt and execute them. In addition, a piece of business logic (realized by a smart contract) can also be cryptographically secured (if confidentiality is required by its stakeholders) so that it only gets loaded and decrypted at runtime.", 
+            "title": "Types of Blockchain"
+        }, 
+        {
+            "location": "/blockchaintypes/#public-ledger", 
+            "text": "Decentralized, anyone can read and send tranasctions, e.g. Bitcoin, Ethereum, Hyperledger", 
+            "title": "Public ledger"
+        }, 
+        {
+            "location": "/blockchaintypes/#private-ledger", 
+            "text": "Centralized under one organization which controls the right to view ans send transactions, e.g. Bankchain", 
+            "title": "Private ledger"
+        }, 
+        {
+            "location": "/blockchaintypes/#what-is-consensus", 
+            "text": "", 
+            "title": "What is consensus:"
+        }, 
+        {
+            "location": "/blockchaintypes/#consensus-defines-types-of-blockchain", 
+            "text": "Permissionless Blockchain : Every node in the network participate in consensus procedure, e.g. Bitcoin Blockchain (Proof of Work)  Permissioned Blockchain : Only Selected nodes(validators, e.g. Government or trusted nodes) participate in consensus procedure e.g. Hyperledger Blockchain", 
+            "title": "Consensus defines types of Blockchain"
+        }, 
+        {
+            "location": "/blockchaintypes/#bitcoin-public-permissionless-blockchain", 
+            "text": "", 
+            "title": "Bitcoin (Public-Permissionless Blockchain)"
+        }, 
+        {
+            "location": "/blockchaintypes/#hyperledger-public-permissioned-blockchain", 
+            "text": "Hyperledger  The Hyperledger Project (www.hyperledger.org) is a collaborative effort to create an enterprise-grade, open-source distributed ledger framework and code base. It aims to advance blockchain technology by identifying and realizing a cross-industry open standard platform for distributed ledgers, which can transform the way business transactions are conducted globally. It is \u00a0a\u00a0protocol\u00a0for\u00a0business\u00ad-to-\u00adbusiness\u00a0and\u00a0 business\u00ad-to-\u00adcustomer\u00a0transactions.  Hyperledger Fabric  Hyperledger Fabric (github.com/hyperledger/fabric) is an implementation of a distributed ledger platform for running smart contracts, leveraging familiar and proven technologies, with a modular architecture allowing pluggable implementations of various functions. It is one of multiple projects currently in incubation under the Hyperledger Project. A developerpreview of the Hyperledger Fabric (called \u201cv0.5-developer-preview\u201d) has been released in June 2016 (github.com/hyperledger/fabric/wiki/Fabric-Releases)  Why a new fabric:  Scalability challenges, and the lack of support for confidential and private transactions, among other limitations, make its use unworkable for many business\u00adcritical applications. To meet the varied demands of the modern marketplace, Hyperledger has been designed for a broad array of industry\u00adfocused use cases, thereby extending the work of the pioneers in the field by addressing the existing shortcomings.\nThe fabric implements a permissioned ledger, it contains a security infrastructure for authentication and authorization. It supports enrollment and transaction authorization through public-key certificates, and confidentiality for chaincode realized through in-band encryption. More precisely, for connecting to the network every peer needs to obtain an enrollment certificate from an enrollment CA that is part of the membership services. It authorizes a peer to connect to the network and to acquire transaction certificates, which are needed to submit transactions. Transaction certificates are issued by a transaction CA and support pseudonymous authorization for the peers submitting transactions, in the sense that multiple transaction certificates issued to the same peer (that is, to the same enrollment certificate) cannot be linked with each other.  Depending on the purpose of the network, the issuing authority assigns the appropriate level of access that is required to obtain an identity and transact on the network. A network can be run very publicly, making it easy to integrate into a mobile app project, or it can be completely private and known only to invited participants whose identities have been validated.        A validating peer is a node on the network responsible for running consensus, validating transactions, and maintaining the ledger.   A non-validating peer is a node that functions as a proxy to connect clients (issuing transactions) to validating peers. A non-validating peer does not execute transactions but it may verify them.   Some key features of the current fabric release are:   A permissioned blockchain with immediate finality;  Runs arbitrary smart contracts (called chaincode) implemented in Go (golang.org):  User-defined chaincode is encapsulated in a Docker container;  System chaincode runs in the same process as the peer;    Consensus protocol is pluggable, currently an implementation of Byzantine fault-tolerant consensus using the PBFT protocol is supported, a prototype of SIEVE to address nondeterministic chaincode is available, and a protocol stub (named NOOPS) serves for development\non a single node;  Security support through certificate authorities (CAs) for TLS certificates, enrollment certificates, and transaction certificates;  Persistent state using a key-value store interface, backed by RocksDB (rocksdb.org);  An event framework that supports pre-defined and custom events;  A client SDK (Node.js) to interface with the fabric;  Support for basic REST APIs and CLIs   Importance of both privacy and confidentiality: \nOne of the fundamental requirements for any blockchain fabric is that the $identity$ and $patterns of behavior$ of any party on a network must be impossible for unauthorized parties to ascertain by inspecting the ledger. To allow blockchain users to make certain business logics and/or other parameters of a transaction confidential, rendering them inaccessible to anyone other than the stakeholders for the contract or the asset being transferred, the Hyperledger protocol starts with a cryptographic certificate encapsulating a user\u2019s confidential data, which is registered on a Registration Authority. The Registration Authority can issue and revoke identities that are participating in a network. From each identity, the protocol can generate security keys for members to transact on a network, which conceal the identities of the transacting parties, providing privacy support to the network.  Content confidentiality is achieved by encrypting the transactions such that only the stakeholders can decrypt and execute them. In addition, a piece of business logic (realized by a smart contract) can also be cryptographically secured (if confidentiality is required by its stakeholders) so that it only gets loaded and decrypted at runtime.", 
+            "title": "Hyperledger (Public-Permissioned Blockchain)"
+        }, 
+        {
+            "location": "/propertiesrequired/", 
+            "text": "Properties Required\n\n\n\n\nDouble Spending Prevention\n\n\nNon-Repudiation of Transactions\n\n\n\n\nTransferability\n\n\nDivisibility and fungibility\n\n\nScalability\n\n\nHardware Independence\n\n\n\n\nPrivacy and Anonymity\n\n\n\n\nPseudonymity: Public keys must not reveal real identities. Transactions must not reveal real identities.\n\n\nUnlinkability: It is not possible to link different pseudonyms of a real identities.\n        Anonymity = Pseudonymity and Unlinkability.\n\n\n\n\n\n\n\nPrivacy is provided by encrypting the application data.", 
+            "title": "Properties Required for Blockchain"
+        }, 
+        {
+            "location": "/propertiesrequired/#properties-required", 
+            "text": "Double Spending Prevention  Non-Repudiation of Transactions   Transferability  Divisibility and fungibility  Scalability  Hardware Independence", 
+            "title": "Properties Required"
+        }, 
+        {
+            "location": "/propertiesrequired/#privacy-and-anonymity", 
+            "text": "Pseudonymity: Public keys must not reveal real identities. Transactions must not reveal real identities.  Unlinkability: It is not possible to link different pseudonyms of a real identities.         Anonymity = Pseudonymity and Unlinkability.    Privacy is provided by encrypting the application data.", 
+            "title": "Privacy and Anonymity"
+        }, 
+        {
+            "location": "/possiblethreats/", 
+            "text": "There has been lot of research to understand the Weaknesses in the Blockchain technology. Weekness of Bitcoin can also give an idea of possible weaknesses blockchain can have. Below are some of the weaknesses, please check \nlink\n for full details.\n\n\n\n\nMight be a problem\n\n\nWallet Vulnerable To Theft\n\n\nTracing a coin's history\n\n\nSybil attack\n\n\nPacket sniffing\n\n\nDenial of Service (DoS) attacks\n\n\nIllegal content in the block chain\n\n\n\n\n\n\nProbably not a problem\n\n\nBreaking the cryptography\n\n\nScalability\n\n\nAttacking all users\n\n\nDropping transactions\n\n\nAttacker has a lot of computing power\n\n\nSpamming transactions\n\n\nThe Finney attack\n\n\nRival/malicious client code\n\n\n\n\n\n\nDefinitely not a problem\n\n\nGenerating tons of addresses\n\n\nEveryone calculates at the same rate", 
+            "title": "Possible Threats"
+        }, 
+        {
+            "location": "/blockchaincapabilities/", 
+            "text": "Shared ledger\n\n\n\n\nConsensus\n\n\nSmart Contract\n\n\n\n\nAnonymity and Privacy in a untrusted network\n\n\n\n\nPseudonymity\n: Public keys must not reveal real identities. Transactions must not reveal real identities.\n\n\nUnlinkability\n: It is not possible to link different pseudonyms of a real identities.\n        Anonymity = Pseudonymity and Unlinkability.\n\n\n\n\n\n\n\nPrivacy\n is provided by encrypting the application data.\n\n\nProvenence in Supply Chain Management\n\n\n \n\n\nInternet of Value", 
+            "title": "Blockchain Capabilities"
+        }, 
+        {
+            "location": "/blockchaincapabilities/#shared-ledger", 
+            "text": "", 
+            "title": "Shared ledger"
+        }, 
+        {
+            "location": "/blockchaincapabilities/#consensus", 
+            "text": "", 
+            "title": "Consensus"
+        }, 
+        {
+            "location": "/blockchaincapabilities/#smart-contract", 
+            "text": "", 
+            "title": "Smart Contract"
+        }, 
+        {
+            "location": "/blockchaincapabilities/#anonymity-and-privacy-in-a-untrusted-network", 
+            "text": "Pseudonymity : Public keys must not reveal real identities. Transactions must not reveal real identities.  Unlinkability : It is not possible to link different pseudonyms of a real identities.         Anonymity = Pseudonymity and Unlinkability.    Privacy  is provided by encrypting the application data.", 
+            "title": "Anonymity and Privacy in a untrusted network"
+        }, 
+        {
+            "location": "/blockchaincapabilities/#provenence-in-supply-chain-management", 
+            "text": "", 
+            "title": "Provenence in Supply Chain Management"
+        }, 
+        {
+            "location": "/blockchaincapabilities/#internet-of-value", 
+            "text": "", 
+            "title": "Internet of Value"
+        }, 
+        {
+            "location": "/consensustypes/", 
+            "text": "Consensus achieved using Proof-of-Work.\n\n\n\n\nNew transactions are broadcast to all nodes.\n\n\nEach node collects new transactions into a block.\n\n\nEach node works on finding a difficult proof-of-work for its block.\n\n\nWhen a node finds a proof-of-work, it broadcasts the block to all nodes.\n\n\nNodes accept the block only if all transactions in it are valid and not already spent.\n\n\nNodes express their acceptance of the block by working on creating the next block in the chain, using the hash of the accepted block as the previous hash.\n\n\nNodes always consider the longest chain to be the correct one and will keep working on extending it.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCryptocurrencies such as Bitcoin enable users to submit payment transactions without going through a centralized trusted organization. Bitcoin relies on proof-of-work mining to secure consensus which is problematic because mining requires a massive expenditure of energy, confirmation of transactions is slow, and security is difficult to quantify. \nThere are proposals to develop new consensus algorithms, such as Proof of Stake consensus and Byzantine fault tolerance consensus.\n\n\nConsensus without Mining - Proof of Stake\n\n\nIn the Proof of Stake model used by, network security is governed by peers having a stake in the network. The incentives provided by this algorithm do not promote centralization in the same way that Proof of Work algorithms do. The network has will be highly decentralized because a large number of unique accounts are contributing blocks to the network by voting, and block creation reward is shared among the participant in proportion to their stake. \n\n\nIn a \nnothing at stake attack\n, forgers attempt to build blocks on top of every fork they see because doing so costs them almost nothing, and because ignoring any fork may mean losing out on the block rewards that would be earned if that fork were to become the chain with the largest cumulative difficulty. This makes consensus on a single blockchain not guaranteed.\n\n\nConsensus without Mining - Practical Byzantine fault tolerance (PBFT)\n\n\nByzantine fault-tolerant algorithms are  important because malicious attacks and software errors are increasingly common and can cause faulty nodes to exhibit arbitrary behavior(Bizantine faults).  PBFT works in asynchronous environments like the Internet and after PBFT, several BFT protocols were introduced to improve its robustness and performance. Hyperledger consensus and TendermintCore consensus are example of such consensus algorithms.\n\n\nTendermint Consensus\n\n\nTendermint is a solution to the blockchain consensus problem that does not require mining by adapting an existing solution to the Byzantine Generals Problem. It solves the the nothing at stake problem of Proof of Stake problem.\nThe algorithm is based on a modified version of the DLS protocol, and is resilient up to $1/3$ of Byzantine participants.\nTendermintCore is a high-performance blockchain consensus engine that enables you to run Byzantine fault tolerant applications, written in any programming language, on many machines spread across the globe, with strong security guarantees.\n\n\nHyperledger Consensus", 
+            "title": "Consensus"
+        }, 
+        {
+            "location": "/consensustypes/#consensus-achieved-using-proof-of-work", 
+            "text": "New transactions are broadcast to all nodes.  Each node collects new transactions into a block.  Each node works on finding a difficult proof-of-work for its block.  When a node finds a proof-of-work, it broadcasts the block to all nodes.  Nodes accept the block only if all transactions in it are valid and not already spent.  Nodes express their acceptance of the block by working on creating the next block in the chain, using the hash of the accepted block as the previous hash.  Nodes always consider the longest chain to be the correct one and will keep working on extending it.         Cryptocurrencies such as Bitcoin enable users to submit payment transactions without going through a centralized trusted organization. Bitcoin relies on proof-of-work mining to secure consensus which is problematic because mining requires a massive expenditure of energy, confirmation of transactions is slow, and security is difficult to quantify. \nThere are proposals to develop new consensus algorithms, such as Proof of Stake consensus and Byzantine fault tolerance consensus.", 
+            "title": "Consensus achieved using Proof-of-Work."
+        }, 
+        {
+            "location": "/consensustypes/#consensus-without-mining-proof-of-stake", 
+            "text": "In the Proof of Stake model used by, network security is governed by peers having a stake in the network. The incentives provided by this algorithm do not promote centralization in the same way that Proof of Work algorithms do. The network has will be highly decentralized because a large number of unique accounts are contributing blocks to the network by voting, and block creation reward is shared among the participant in proportion to their stake.   In a  nothing at stake attack , forgers attempt to build blocks on top of every fork they see because doing so costs them almost nothing, and because ignoring any fork may mean losing out on the block rewards that would be earned if that fork were to become the chain with the largest cumulative difficulty. This makes consensus on a single blockchain not guaranteed.", 
+            "title": "Consensus without Mining - Proof of Stake"
+        }, 
+        {
+            "location": "/consensustypes/#consensus-without-mining-practical-byzantine-fault-tolerance-pbft", 
+            "text": "Byzantine fault-tolerant algorithms are  important because malicious attacks and software errors are increasingly common and can cause faulty nodes to exhibit arbitrary behavior(Bizantine faults).  PBFT works in asynchronous environments like the Internet and after PBFT, several BFT protocols were introduced to improve its robustness and performance. Hyperledger consensus and TendermintCore consensus are example of such consensus algorithms.", 
+            "title": "Consensus without Mining - Practical Byzantine fault tolerance (PBFT)"
+        }, 
+        {
+            "location": "/consensustypes/#tendermint-consensus", 
+            "text": "Tendermint is a solution to the blockchain consensus problem that does not require mining by adapting an existing solution to the Byzantine Generals Problem. It solves the the nothing at stake problem of Proof of Stake problem.\nThe algorithm is based on a modified version of the DLS protocol, and is resilient up to $1/3$ of Byzantine participants.\nTendermintCore is a high-performance blockchain consensus engine that enables you to run Byzantine fault tolerant applications, written in any programming language, on many machines spread across the globe, with strong security guarantees.", 
+            "title": "Tendermint Consensus"
+        }, 
+        {
+            "location": "/consensustypes/#hyperledger-consensus", 
+            "text": "", 
+            "title": "Hyperledger Consensus"
+        }, 
+        {
+            "location": "/smartcontract/", 
+            "text": "Smart Contract in Bitcoin (Public-Permissionless Blockchain)\n\n\nSmart Contract in Ethereum (Public Blockchain)\n\n\ncontract HelloWorld {\n    uint public balance;\n    function HelloWorld(){\n        balance = 1000;\n    }\n    function deposit(uint _value) returns(uint _newValue){\n        balance += _value;\n        return balance;\n    }\n}\n\n\n\n\nSmart Contract in Hyperledger (Public-Permissioned Blockchain)\n\n\nIn hyperledger the code for smart contract is called chaincode. Confidentiality for chaincodes and state is provided through symmetric-key encryption of transactions and states with a blockchain-specific key that is available to all peers with an enrollment certificate for the blockchain. Extending the encryption mechanisms towards more fine-grained confidentiality for transactions and state entries is planned for a future version.\n\n\nArchitecture\n\n\nThe validating peers run a BFT consensus protocol for executing a replicated state\nmachine that accepts three types of transactions as operations:\n\n\n\n\nDeploy transaction: Takes a chaincode (representing a smart contract) written in Go as a parameter; the\nchaincode is installed on the peers and ready to be invoked.\n\n\nInvoke transaction: Invokes a transaction of a particular chaincode that has been installed earlier through\na deploy transaction; the arguments are specific to the type of transaction; the chaincode executes the\ntransaction, may read and write entries in its state accordingly, and indicates whether it succeeded or\nfailed.\n\n\nQuery transaction: Returns an entry of the state directly from reading the peer\u2019s persistent state; this\nmay not ensure linearizability\n\n\n\n\nValidation of transactions occurs through the replicated execution of the chaincode and given the fault assumption underlying BFT consensus, i.e., that among the n validating peers at most  $f \n n/3$  may \u201clie\u201d and behave arbitrarily, but all others execute the chaincode correctly. When executed on top of PBFT consensus, it is important that chaincode transactions are deterministic, otherwise the state of the peers might diverge. A modular solution to filter out non-deterministic transactions that are demonstrably diverging is available and has been implemented in the SIEVE protocol.", 
+            "title": "Smart Contract"
+        }, 
+        {
+            "location": "/smartcontract/#smart-contract-in-bitcoin-public-permissionless-blockchain", 
+            "text": "", 
+            "title": "Smart Contract in Bitcoin (Public-Permissionless Blockchain)"
+        }, 
+        {
+            "location": "/smartcontract/#smart-contract-in-ethereum-public-blockchain", 
+            "text": "contract HelloWorld {\n    uint public balance;\n    function HelloWorld(){\n        balance = 1000;\n    }\n    function deposit(uint _value) returns(uint _newValue){\n        balance += _value;\n        return balance;\n    }\n}", 
+            "title": "Smart Contract in Ethereum (Public Blockchain)"
+        }, 
+        {
+            "location": "/smartcontract/#smart-contract-in-hyperledger-public-permissioned-blockchain", 
+            "text": "In hyperledger the code for smart contract is called chaincode. Confidentiality for chaincodes and state is provided through symmetric-key encryption of transactions and states with a blockchain-specific key that is available to all peers with an enrollment certificate for the blockchain. Extending the encryption mechanisms towards more fine-grained confidentiality for transactions and state entries is planned for a future version.", 
+            "title": "Smart Contract in Hyperledger (Public-Permissioned Blockchain)"
+        }, 
+        {
+            "location": "/smartcontract/#architecture", 
+            "text": "The validating peers run a BFT consensus protocol for executing a replicated state\nmachine that accepts three types of transactions as operations:   Deploy transaction: Takes a chaincode (representing a smart contract) written in Go as a parameter; the\nchaincode is installed on the peers and ready to be invoked.  Invoke transaction: Invokes a transaction of a particular chaincode that has been installed earlier through\na deploy transaction; the arguments are specific to the type of transaction; the chaincode executes the\ntransaction, may read and write entries in its state accordingly, and indicates whether it succeeded or\nfailed.  Query transaction: Returns an entry of the state directly from reading the peer\u2019s persistent state; this\nmay not ensure linearizability   Validation of transactions occurs through the replicated execution of the chaincode and given the fault assumption underlying BFT consensus, i.e., that among the n validating peers at most  $f   n/3$  may \u201clie\u201d and behave arbitrarily, but all others execute the chaincode correctly. When executed on top of PBFT consensus, it is important that chaincode transactions are deterministic, otherwise the state of the peers might diverge. A modular solution to filter out non-deterministic transactions that are demonstrably diverging is available and has been implemented in the SIEVE protocol.", 
+            "title": "Architecture"
+        }, 
+        {
+            "location": "/upcomingprojects/", 
+            "text": "Future applications of Blockchain\n\n\nSupply Chain Management (SCM)\n\n\n\n\n\n\n\n\nDigital Identity Management", 
+            "title": "Upcoming Projects"
+        }, 
+        {
+            "location": "/upcomingprojects/#future-applications-of-blockchain", 
+            "text": "", 
+            "title": "Future applications of Blockchain"
+        }, 
+        {
+            "location": "/upcomingprojects/#supply-chain-management-scm", 
+            "text": "", 
+            "title": "Supply Chain Management (SCM)"
+        }, 
+        {
+            "location": "/upcomingprojects/#digital-identity-management", 
+            "text": "", 
+            "title": "Digital Identity Management"
+        }
+    ]
+}
