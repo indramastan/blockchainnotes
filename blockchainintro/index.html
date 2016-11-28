@@ -78,6 +78,8 @@
                 
                     <li><a class="toctree-l4" href="#what-is-blockchain">What is Blockchain</a></li>
                 
+                    <li><a class="toctree-l4" href="#how-transactions-are-created-and-verified-and-put-up-into-blockchain">How transactions are created and verified and put up into blockchain</a></li>
+                
             
             </ul>
         
@@ -197,9 +199,20 @@
 <p>Blockchain is an append-only distributed ledger, where records are stored in blocks, and blocks form a chain.</p>
 <p><img alt="Blockchain" src="../img/simpleBchain.svg" title="How blocks form a chain" /></p>
 <p>Every block contains transactions, that can be verified by any node in the network.
-Consensus is procedure to have an accurate Blockchain at every node.
-<img alt="Consensus" src="../img/consensus-1.png" />
-<img alt="How Blockchain works" src="../img/blockchainWorking.png" title="How Blockchain works" /></p>
+Consensus is procedure to have an accurate Blockchain at every node. In the below every node has the same blockchain consisting of two blocks and thus every node has the same order or transactions stored. </p>
+<h2 id="how-transactions-are-created-and-verified-and-put-up-into-blockchain">How transactions are created and verified and put up into blockchain</h2>
+<p>There are two types of transactions in the blockchain network: </p>
+<ul>
+<li>
+<p><em>Coin base transactions:</em> these transaction are the backbone of bitcoin blockchain. Coinbase trasaction are created by miner as a mining reward. This is also a way to put new coins into the system. </p>
+</li>
+<li>
+<p><em>Transactions transfering assests ownership from one public key to another</em> These trasactions are the manjority of the transaction we find into the blockchain network. These transaction basically involve signature by sender on the public key of recipient. </p>
+</li>
+</ul>
+<p>The flow of trasaction is in the below image. </p>
+<p><img alt="Consensus" src="../img/consensus-1.png" /></p>
+<p><img alt="How Blockchain works" src="../img/blockchainWorking.png" title="How Blockchain works" /></p>
 <p><a href="https://www.youtube.com/watch?v=RqlYaezN3zk"><img alt="Blockchain" src="../img/4FactsEveryoneShouldKnowAbouttheBlockchain.png" /></a></p>
               
             </div>
